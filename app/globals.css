@@ -77,7 +77,7 @@ body::after {
   white-space: nowrap;
   border-right: 3px solid #fff; /* cursor */
   width: 0;
-  animation: typewriter 3s steps(40) 1s forwards, blink 0.75s step-end infinite;
+  animation: typewriter 2s steps(40) 1s forwards, blink 0.75s step-end infinite;
 }
 
 /* Pulse and fade-in animation for StatusBar */
@@ -115,6 +115,12 @@ body::after {
 @media (min-width: 1024px) {
   .impact-section {
     grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .typewriter {
+    text-align: center; /* Align text center for mobile */
   }
 }
 

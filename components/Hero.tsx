@@ -53,10 +53,11 @@ export default function Hero() {
   initial={{ opacity: 0, y: 10, filter: "blur(6px)" }}
   animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
   transition={{ duration: 0.6, ease: "easeOut" }}
-  className="text-3xl md:text-5xl font-semibold tracking-tight typewriter" // Add this class for typewriter effect
+  className="text-3xl md:text-5xl font-semibold tracking-tight typewriter text-center" // Add this class for center alignment
 >
   I build systems that don’t break.
 </motion.h1>
+
 
 
         <motion.p
