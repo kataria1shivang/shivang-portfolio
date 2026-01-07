@@ -23,7 +23,7 @@ export default function Impact() {
           className="rounded-2xl border border-zinc-800 bg-zinc-950/40 p-4 hover:bg-zinc-900 transition"
         >
           <p className="text-lg font-semibold">{s.k}</p>
-          <p className="text-xs text-zinc-400 mt-1">{s.v}</p>
+          <p className="text-xs text-zinc-400 mt-1">{s.k}</p>
         </motion.div>
       ))}
     </section>
