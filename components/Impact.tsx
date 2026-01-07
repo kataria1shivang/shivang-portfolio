@@ -3,10 +3,10 @@
 import { motion } from "framer-motion";
 
 const stats = [
-  { k: "$4B+ daily trades", v: "fintech platform scale" },
-  { k: "100+ microservices", v: "EKS modernization" },
-  { k: "MTTD ↓ 40%", v: "observability improvements" },
-  { k: "RTO < 30m", v: "DR readiness automation" },
+  { k: "Platforms Handling $4B+ daily trades" },
+  { k: "100+ microservices deployed" },
+  { k: "MTTD(Mean Time to Detect) ↓ 40%" },
+  { k: "RTO(Recovery Time Objective) < 30m" },
 ];
 
 export default function Impact() {

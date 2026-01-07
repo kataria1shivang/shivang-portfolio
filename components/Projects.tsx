@@ -7,7 +7,7 @@ const projects = [
     title: "Fintech Platform Modernization (EKS + Microservices)",
     meta: "AWS • Kubernetes • GitOps • Reliability",
     bullets: [
-      "$4B+ daily trade platform modernization and runtime stability improvements.",
+      "Modernized a $4B+ daily trade platform, enhancing runtime stability and performance.",
       "Monolith → 100+ microservices on AWS EKS for scalability and faster releases.",
       "Standardized deployments using ArgoCD + Jenkins across environments.",
     ],
@@ -25,7 +25,7 @@ const projects = [
     title: "Disaster Recovery Automation",
     meta: "Azure DevOps • DR • RTO/RPO",
     bullets: [
-      "Automated DR workflows with RTO < 30 mins, RPO < 60 mins.",
+      "Automated disaster recovery processes using Azure DevOps, optimizing recovery time objectives (RTO) and recovery point objectives (RPO).",
       "Repeatable recovery process with controlled rollouts and validation.",
     ],
   },

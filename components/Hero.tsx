@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import { useEffect, useMemo, useState } from "react";
 
-const words = ["AWS EKS", "Terraform", "GitOps", "SRE", "Observability", "CI/CD", "DR"];
+const words = ["Terraform", "Firewalls", "Site Reliability", "MLOps"];
 
 export default function Hero() {
   const [i, setI] = useState(0);
@@ -50,13 +50,14 @@ export default function Hero() {
         </motion.p>
 
         <motion.h1
-          initial={{ opacity: 0, y: 10, filter: "blur(6px)" }}
-          animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
-          transition={{ duration: 0.6, ease: "easeOut" }}
-          className="text-3xl md:text-5xl font-semibold tracking-tight"
-        >
-          I build systems that don’t break.
-        </motion.h1>
+  initial={{ opacity: 0, y: 10, filter: "blur(6px)" }}
+  animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
+  transition={{ duration: 0.6, ease: "easeOut" }}
+  className="text-3xl md:text-5xl font-semibold tracking-tight typewriter" // Add this class for typewriter effect
+>
+  I build systems that don’t break.
+</motion.h1>
+
 
         <motion.p
           initial={{ opacity: 0, y: 8 }}
@@ -64,8 +65,7 @@ export default function Hero() {
           transition={{ delay: 0.15, duration: 0.5 }}
           className="text-zinc-300 max-w-2xl leading-relaxed"
         >
-          Cloud-native platforms, reliability automation, observability-first operations, and incident readiness —
-          built with a clean, product-like mindset.
+          Building scalable, reliable systems using modern cloud infrastructure, ensuring seamless operations and robust incident readiness.
         </motion.p>
 
         <div className="flex flex-wrap gap-2 items-center">
@@ -84,28 +84,29 @@ export default function Hero() {
         </div>
 
         <div className="flex flex-wrap gap-3 pt-2">
-          <a
-            href="#projects"
-            className="rounded-xl bg-zinc-50 text-zinc-950 px-4 py-2 text-sm font-medium hover:opacity-90 transition"
-          >
-            View Projects
-          </a>
+  <motion.a
+    href="#projects"
+    className="rounded-xl bg-zinc-50 text-zinc-950 px-4 py-2 text-sm font-medium hover:bg-zinc-100 transition-all duration-300 transform hover:scale-105"
+  >
+    View Projects
+  </motion.a>
 
-          <a
-            href="/shivangkataria.pdf"
-            download
-            className="rounded-xl border border-zinc-800 px-4 py-2 text-sm font-medium text-zinc-100 hover:bg-zinc-900 transition"
-          >
-            Download Resume
-          </a>
+  <motion.a
+    href="/shivangkataria.pdf"
+    download
+    className="rounded-xl border border-zinc-800 px-4 py-2 text-sm font-medium text-zinc-100 hover:bg-zinc-900 transition-all duration-300 transform hover:scale-105"
+  >
+    Download Resume
+  </motion.a>
 
-          <a
-            href="#contact"
-            className="rounded-xl border border-zinc-800 px-4 py-2 text-sm font-medium text-zinc-100 hover:bg-zinc-900 transition"
-          >
-            Contact
-          </a>
-        </div>
+  <motion.a
+    href="#contact"
+    className="rounded-xl border border-zinc-800 px-4 py-2 text-sm font-medium text-zinc-100 hover:bg-zinc-900 transition-all duration-300 transform hover:scale-105"
+  >
+    Contact
+  </motion.a>
+</div>
+
       </div>
     </section>
   );

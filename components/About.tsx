@@ -11,18 +11,17 @@ export default function About() {
           <p className="text-sm text-zinc-400 mt-1">A bit of story + a bit of philosophy.</p>
 
           <p className="mt-4 text-zinc-300 leading-relaxed">
-            I’m Shivang — a DevOps/SRE-minded engineer who enjoys building cloud-native platforms
-            that are <span className="text-zinc-100 font-medium">reliable, observable, and easy to operate</span>.
-            I work across AWS & Azure, Kubernetes, CI/CD, Terraform, and incident readiness.
+          I’m Shivang — a DevOps/Site Reliabilty engineer who thrives on building cloud-native platforms that are not just reliable but also efficient. 
+          From designing systems on AWS and Azure to implementing Kubernetes and Terraform solutions, I specialize in creating environments that run seamlessly under pressure.
           </p>
 
           <p className="mt-3 text-zinc-300 leading-relaxed">
-            My creative side shows up in how I design systems: clean dashboards, clear alerts,
-            and interfaces that help teams move fast without breaking production.
+          My approach blends technical expertise with design thinking: I focus on creating systems that not only perform well but also give teams the tools they need to operate with confidence. 
+          Whether it’s through clear, actionable alerts or responsive dashboards, my goal is to make systems both powerful and simple to use.
           </p>
 
           <div className="mt-5 flex flex-wrap gap-2">
-            {["Reliability", "Automation", "Observability", "Security", "Fintech scale"].map((t) => (
+            {["Cloud Infrastructure", "Automation & CI/CD", "Incident Management", "High Availability & Scalability"].map((t) => (
               <span key={t} className="rounded-full border border-zinc-800 bg-zinc-900 px-3 py-1 text-sm">
                 {t}
               </span>
@@ -34,11 +33,11 @@ export default function About() {
           whileHover={{ y: -2 }}
           className="w-full md:w-80 rounded-2xl border border-zinc-800 bg-zinc-900/40 p-4"
         >
-          <p className="text-sm font-medium">Now</p>
+          <p className="text-sm font-medium">What’s new I’m working on:</p>
           <ul className="mt-3 text-sm text-zinc-300 space-y-2 list-disc pl-5">
-            <li>Building: reliability-first delivery workflows</li>
-            <li>Exploring: SLOs, error budgets, on-call maturity</li>
-            <li>Polishing: this portfolio like a product</li>
+            <li>Multi-region infrastructure</li>
+            <li>Advanced SLOs and error budget strategies</li>
+            <li>Serverless Architectures</li>
           </ul>
         </motion.div>
       </div>

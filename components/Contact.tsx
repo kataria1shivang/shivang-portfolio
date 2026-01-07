@@ -25,7 +25,9 @@ export default function Contact() {
         </a>
         <a
           className="rounded-xl border border-zinc-800 px-4 py-2 text-sm hover:bg-zinc-900 flex items-center gap-2"
-          href="#"
+          href="https://github.com/kataria1shivang/shivang-portfolio"
+          target="_blank"
+          rel="noreferrer"
         >
           <Github size={16} /> GitHub
         </a>
