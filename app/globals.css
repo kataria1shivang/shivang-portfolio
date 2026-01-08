@@ -55,30 +55,36 @@ body::after {
 }
 
 /* Typewriter Effect for Hero */
-@keyframes typewriter {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }
+@keyframes reveal {
+  from { clip-path: inset(0 100% 0 0); }
+  to   { clip-path: inset(0 0 0 0); }
 }
 
-@keyframes blink {
-  50% {
-    border-color: transparent;
-  }
+@keyframes caretBlink {
+  50% { opacity: 0; }
 }
 
-/* Typewriter Effect */
-.typewriter {
+.typewriter{
   display: inline-block;
-  overflow: hidden;
+  width: fit-content;        /* key for centering */
+  margin-inline: auto;       /* key for centering */
   white-space: nowrap;
-  border-right: 3px solid #fff; /* cursor */
-  width: 0;
-  animation: typewriter 2s steps(40) 1s forwards, blink 0.75s step-end infinite;
+  position: relative;
+  clip-path: inset(0 100% 0 0);
+  animation: reveal 1.4s steps(28, end) 0.2s forwards; /* SPEED: reduce 1.4s */
 }
+
+.typewriter::after{
+  content: "";
+  display: inline-block;
+  width: 3px;
+  height: 1em;
+  background: #fff;
+  margin-left: 6px;
+  transform: translateY(2px);
+  animation: caretBlink 0.7s step-end infinite;
+}
+
 
 /* Pulse and fade-in animation for StatusBar */
 @keyframes pulse {

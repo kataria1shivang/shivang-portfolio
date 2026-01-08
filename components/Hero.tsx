@@ -49,14 +49,17 @@ export default function Hero() {
           <span className="ml-2 text-zinc-500 animate-pulse">▍</span>
         </motion.p>
 
-        <motion.h1
-  initial={{ opacity: 0, y: 10, filter: "blur(6px)" }}
-  animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
-  transition={{ duration: 0.6, ease: "easeOut" }}
-  className="text-3xl md:text-5xl font-semibold tracking-tight typewriter text-center" // Add this class for center alignment
->
-  I build systems that don’t break.
-</motion.h1>
+        <div className="text-center md:text-left">
+  <motion.h1
+    initial={{ opacity: 0, y: 10, filter: "blur(6px)" }}
+    animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
+    transition={{ duration: 0.6, ease: "easeOut" }}
+    className="text-3xl md:text-5xl font-semibold tracking-tight typewriter"
+  >
+    I build systems that don’t break.
+  </motion.h1>
+</div>
+
 
 
 
